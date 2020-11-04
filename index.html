@@ -1,17 +1,31 @@
 <html>
+  <style>
+    #draggable {
+      width: 500px;
+      height: 300px;
+      padding: 0.5em;
+    }
+  </style>
   <head>
     <title>background-blur</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script type="application/javascript" src="back-pro.js"></script>
+    <link rel="stylesheet" href="style/stylesheets/style.css" />
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
   </head>
 
   <body>
-    <div id="box1" class="box blurred-bg tinted">
+    <div id="draggable" class="box blurred-bg tinted">
       <div class="content">
         <h1>Blurred Background</h1>
         <h2>
           By
-          <a href="http://ariona.net" rel="follow" target="_blank"
+          <a href="http://ariona.net" \ rel="follow" target="_blank"
             >Ariona, Rian</a
           >
         </h2>
